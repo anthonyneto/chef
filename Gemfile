@@ -30,6 +30,8 @@ group(:development, :test) do
 
   gem 'ruby-shadow', :platforms => :ruby unless RUBY_PLATFORM.downcase.match(/(aix|cygwin)/)
 
+  gem 'bundler-audit', git: 'https://github.com/rubysec/bundler-audit.git', ref: '4e32fca'
+
   # For external tests
 #  gem 'chef-zero', github: 'chef/chef-zero'
 #  gem 'cheffish', github: 'chef/cheffish'
